@@ -19,7 +19,6 @@ $(document).ready(function (){
         // pause the timer
         pause();
         // store the value of the min sec centi-sec
-
         // change text to start
         $(".stop").text("start");
         // add class start
@@ -27,8 +26,11 @@ $(document).ready(function (){
         // remove stop 
         $(".stop").removeClass("stop");
         // change lap to reset class
+        $(".lap").addClass("reset")
         //change lap to reset text
+        $(".lap").text("reset")
         // remove lap class from the lap
+        $(".lap").removeClass("lap")
     })
     // event listener lap
     $('.lap').click(()=>{
@@ -46,20 +48,22 @@ $(document).ready(function (){
         location.reload(true);
     })
    function startClock(){
-    function calculate() {
-        setTimeout(calculate, 1000);
-        $("#min").text(min);
-        $("#sec").text(sec);
-        if (sec <59){
-            sec++;
-        }
-        if(sec==59){
-            sec=0;
-            min++;
-        }
-
- }
-    calculate();
+        calculate();
+    
+    
    }
+   function calculate() {
+    setTimeout(calculate, 1000);
+    $("#min").text(min);
+    $("#sec").text(sec);
+    if (sec <59){
+        sec++;
+    }
+    if(sec===59){
+        sec=0;
+        min++;
+    }
+
+}
 
 })
