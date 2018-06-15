@@ -19,8 +19,8 @@ header{
 }
 #time{
     text-align: center;
-    font-size:8vw;
-    margin-top:15%;
+    font-size:5vw;
+    margin-top:12%;
     margin-left:25%;
 width:43vw;
 background-color:black;
@@ -31,26 +31,63 @@ box-shadow: -8px 31px 26px 19px rgba(49,35,97,0.65);
 }
 #btn{
     margin-top:5%;
-    margin-left:25%;
+    margin-left: 45%;
+
     padding:20px;
     
 }
 #start-btn{
-    background-color:orangered; 
     padding: 30px;
-    border:0px solid orange;
-    border-radius:100%;
+    border:5px solid orangered;
+   
     cursor: pointer;
 }
-#lap-btn{
-  background-color:orange;
+#stop-btn{
   padding: 30px;
-  border:0px solid orange;
-  border-radius:100%;
+  border:5px solid darkred;
+ 
   cursor: pointer;
+  margin-bottom: 15%;
 }
-#lapsection{
-    font-size:30px;
-    height:5%;
-    overflow: scroll;
+#resume-btn{
+    padding: 30px;
+    padding-left:15px;
+    padding-right:15px; 
+    border:5px solid orange;
+    margin-left:-2%;
+    
+    cursor: pointer;
+}
+.col-lg-12, .col-m-12 ,.col-xs-12{
+    margin-bottom: 15%;
+}
+@media(max-width:700px){
+    #btn{
+       margin:0;
+       margin-top:5%;
+       padding:0;
+    }
+    #start-btn{
+        padding:10px;
+        margin-left:30%;
+        border:0px solid;
+        color:orangered;
+        font-size:25px;
+    }
+    #resume-btn{
+        padding: 10px;
+        margin-left:30%;
+        border:0px solid;
+        color:orangered;
+        font-size:25px;
+    }
+    #stop-btn{
+        padding:10px;
+        margin-left:30%;
+        border:0px solid;
+        color:orangered;
+        font-size:25px;
+    }
+
+
 }
